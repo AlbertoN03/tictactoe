@@ -1,7 +1,10 @@
+var Playerx="x";
+var turns=0;
+var theend=false;
 
-
-
-
+function performLogic(#buttonId,#tileId){
+ $(buttonId)
+}
 
 
 
