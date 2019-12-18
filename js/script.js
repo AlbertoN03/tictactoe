@@ -1,11 +1,18 @@
-var Playerx="x";
+var currentplayer="x";
 var turns=0;
 var theend=false;
 
-function performLogic(#buttonId,#tileId){
- $(buttonId)
+function performLogic(buttonId,tileId){
+ $(buttonId).hide()
+ $(tileId).text(currentplayer)
 }
-
+function switchplayer(){
+    if(currentplayer==='x'){
+        currentplayer='o';
+    } else if(currentplayer==='o'){
+        currentplayer='x';
+    }
+}
 
 
 $("#button1").click(function() {
